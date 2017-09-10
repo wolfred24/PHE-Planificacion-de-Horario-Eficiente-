@@ -39,7 +39,16 @@ ponemos el siguiente comando
 en el git commit el -m crea un comentario el que esta entre comillas puede ser cualquier cosa, es importante ponerlo y que describa perfectamente los cambiops que se hicieron.
 una vez que tenemos el commit listo lo metemos a la branch pruebas con el siguente comando
 
-6.git push origin pruebas
+6.git checkout pruebas
+
+Esto nos cambia a de nuevo a la branch pruebas una vez aqui ingresamos:
+
+7. git merge (nombre de la branch a combinar) -m "Combinando cambios de mi branch en la rama pruebas"
+
+Este comando combina la rama especificada en la rama pruebas, con el -m ponemos un comentario, es importante siempre hacerlo el comentario puede ser cualquier cosa.
+despues ingresamos
+
+8.git push origin pruebas
 
 como vemos el comando nos pide el origen de nuestra branch y la branch a la que meteremos los commit que hicimos previamente. una vez hecho esto ya hemos terminado
 podemos ir a github y nos saldra un boton verde diciendo que hemos hecho cambios que podemos hacer un pull request, el pull request pedira un revision 
