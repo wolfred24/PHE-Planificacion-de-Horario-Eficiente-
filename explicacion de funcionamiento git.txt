@@ -1,0 +1,46 @@
+Hola, en este archivo encontraran lo basico para manejar git si tienen alguna duda 
+hay un curso muy bueno aqui: https://try.github.io/levels/1/challenges/25
+
+Primero abrimos el git bash
+
+despues nos movemos a la carpeta donde descargaremos el repositorio, puede ser cualquiera
+
+ingresamos
+
+1.git clone https://github.com/isaacTrujillo/PHE-Planificacion-de-Horario-Eficiente-.git
+
+Este comando clonara el repositorio en la carpeta que estamos, lo siguiente a hacer es crear nuestra propia branch, una branch es como una rama que se deriva
+de la rama principal en este caso master, asi que vamos a crear nuestra branch donde pondremos nuestros cambios.
+
+2.git checkout -b (nombre que quieras en mi caso le puse isaac)
+
+Este comando nos mete directamente a nuestra branch, en caso de que querramos acceder a otra branch ponemos: git checkout (nombre de la branch a acceder).
+Es importante siempre que entremos a manejar nuestro repositorio antes de hacer cualquier cambio actualizar nuestro repositorio local, por si alguien mas hizo cambios.
+siempre pongan antes de hacer cualquier cambio: git pull origin master.
+Esto actualizara el repositorio.
+
+Ahora en nuestro directorio tenemos los archivos que clonamos del repositorio y estamos en nuestra branch, modificamos el archivo poner nombre y ponemos nuestro nombre
+una vez esto hecho esto en la linea de comnados ponemos
+
+3.git status
+
+Saldra un archivo en verde esto nos dice que hay un archivo modificado, el git status nos dice que cambios tenemos en nuestro origen de la branch, el origen es nuestra 
+copia de archivos y se actualiza cada que agregamos uno en la carpeta, cada branch tiene su propio origen, en este caso nuestra branch actualizo su origen y git status nos lo marca.
+El siguiente paso es agregar los cambios.
+
+4.git add (nombre del archivo)
+
+Esto pondra nuestros archivos en un espacio temporal para hacer un commit, en el commit metemos nuestros cambios y 
+un comentario que despues meteremos a la branch necesaria.
+ponemos el siguiente comando
+
+5.git commit -m "(Ingrese aqui el cambio que hizo)"
+
+en el git commit el -m crea un comentario el que esta entre comillas puede ser cualquier cosa, es importante ponerlo y que describa perfectamente los cambiops que se hicieron.
+una vez que tenemos el commit listo lo metemos a la branch pruebas con el siguente comando
+
+6.git push origin pruebas
+
+como vemos el comando nos pide el origen de nuestra branch y la branch a la que meteremos los commit que hicimos previamente. una vez hecho esto ya hemos terminado
+podemos ir a github y nos saldra un boton verde diciendo que hemos hecho cambios que podemos hacer un pull request, el pull request pedira un revision 
+de los miembros del codigo y si se acepta se agrega a la branch master.
