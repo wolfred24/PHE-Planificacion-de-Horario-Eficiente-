@@ -24,11 +24,11 @@ una vez esto hecho esto en la linea de comnados ponemos
 
 3.git status
 
-Saldra un archivo en verde esto nos dice que hay un archivo modificado, el git status nos dice que cambios tenemos en nuestro origen de la branch, el origen es nuestra 
+Saldra un archivo en rojo esto nos dice que hay un archivo modificado, el git status nos dice que cambios tenemos en nuestro origen de la branch, el origen es nuestra 
 copia de archivos y se actualiza cada que agregamos uno en la carpeta, cada branch tiene su propio origen, en este caso nuestra branch actualizo su origen y git status nos lo marca.
 El siguiente paso es agregar los cambios.
 
-4.git add (nombre del archivo)
+4.git add "(nombre del archivo y extension ejemplo: texto.txt)"
 
 Esto pondra nuestros archivos en un espacio temporal para hacer un commit, en el commit metemos nuestros cambios y 
 un comentario que despues meteremos a la branch necesaria.
