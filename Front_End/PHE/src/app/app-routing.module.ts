@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavbarComponent } from "./navbar/navbar.component";
+
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
 const rutas: Routes = [
-  {path:'', component: NavbarComponent} 
+  {path:'', redirectTo: '/materias', pathMatch:'full'},
+  {path:'**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
