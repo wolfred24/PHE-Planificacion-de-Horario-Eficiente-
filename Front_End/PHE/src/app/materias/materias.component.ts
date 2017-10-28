@@ -10,9 +10,9 @@ class Materias {
 }
 
 const instanciaMaterias: Materias[] = [
-  {nombre: "matematicas",seccion: 203,horas: 2,creditos: 9,clave: "520",nrc: "J432"}
-  {nombre: "matematicas",seccion: 203,horas: 2,creditos: 9,clave: "520",nrc: "J432"}
-  {nombre: "matematicas",seccion: 203,horas: 2,creditos: 9,clave: "520",nrc: "J432"}
+  {nombre: "matematicas",seccion: 203,horas: 2,creditos: 9,clave: "520",nrc: "J432"},
+  {nombre: "matematicas",seccion: 203,horas: 2,creditos: 9,clave: "520",nrc: "J432"},
+  {nombre: "matematicas",seccion: 203,horas: 2,creditos: 9,clave: "520",nrc: "J432"},
   {nombre: "matematicas",seccion: 203,horas: 2,creditos: 9,clave: "520",nrc: "J432"}
 ]
 @Component({
