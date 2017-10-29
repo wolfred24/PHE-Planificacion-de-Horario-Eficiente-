@@ -1,1 +1,22 @@
+<nav>
+<div class="nav-wrapper blue darken-2">
+    <img class="brand-logo right" src="../assets/images/Logo.jpg">
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li class="waves-effect waves-light"><a href="#">Aulas</a></li>
+      <li class="waves-effect waves-light"><a routerLink="materias" routerActive="active" >Materias</a></li>
+      <li class="waves-effect waves-light"><a href="#">Profesores</a></li>
+      <li class="waves-effect waves-light"><a href="#">Secciones</a></li>
+      <li class="waves-effect waves-light"><a href="#">Generar</a></li>
+    </ul>
+
+    <ul id="slide-out" class="side-nav">
+      <li><a href="#">Aulas</a></li>
+      <li><a routerLink="materias" routerActive="active">Materias</a></li>
+      <li><a href="#">Profesores</a></li>
+      <li><a href="#">Secciones</a></li>
+      <li><a href="#">Generar</a></li>
+    </ul>
+    <a materialize="sideNav" href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
 <router-outlet></router-outlet>

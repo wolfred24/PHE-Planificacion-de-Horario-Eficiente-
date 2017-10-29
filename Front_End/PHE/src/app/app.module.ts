@@ -1,19 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { MaterializeModule } from 'angular2-materialize';
+import { MateriasModule } from './materias/materias.module';
 import { AppRoutingModule } from "./app-routing.module";
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     MaterializeModule,
+    MateriasModule,
     AppRoutingModule
   ],
   providers: [],
